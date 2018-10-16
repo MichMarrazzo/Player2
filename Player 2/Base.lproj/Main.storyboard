@@ -23,7 +23,7 @@
                                 <segments>
                                     <segment title="Gamers"/>
                                     <segment title="Clans"/>
-                                    <segment title="Events"/>
+                                    <segment title=""/>
                                 </segments>
                                 <color key="tintColor" red="0.95206111669540405" green="0.6783713698387146" blue="0.23903194069862366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </segmentedControl>
