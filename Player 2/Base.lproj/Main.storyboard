@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Radar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,13 +31,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h3h-5q-pfc"/>
+                    <navigationItem key="navigationItem" title="Radar" id="h3h-5q-pfc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="856.82158920539734"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard-->
         <scene sceneID="Tyh-em-EUF">
             <objects>
                 <viewController id="qjs-BR-Dql" sceneMemberID="viewController">
@@ -47,29 +47,92 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w6H-QY-TMb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="C7X-m5-ucF"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="C7X-m5-ucF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqw-Mm-khx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1694" y="857"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="imQ-dW-AaE">
+        <!--Chat Table View Controller-->
+        <scene sceneID="ssu-Mc-vWP">
             <objects>
-                <viewController id="EUH-nv-jx2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4jK-vh-MRx">
+                <tableViewController id="UaE-R6-tAl" userLabel="Chat Table View Controller" customClass="ChatTableViewController" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="N5H-Le-5va">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="nSx-jA-eIK"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zfl-4n-mw4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P12-bO-4T4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="F8G-ZC-WQa">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yOW-e5-3P0">
+                                    <rect key="frame" x="12" y="21" width="351" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="Gamers"/>
+                                        <segment title="Clans"/>
+                                    </segments>
+                                    <color key="tintColor" red="0.95153409242630005" green="0.67954927682876587" blue="0.23902618885040283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="90" id="crS-bi-XQT" customClass="ChatTableViewCell" customModule="Player_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="98" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="crS-bi-XQT" id="itK-BV-PLR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mL6-Is-gZS" userLabel="imageProfileChat">
+                                            <rect key="frame" x="16" y="9" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nameProfileChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlL-0g-krI">
+                                            <rect key="frame" x="103" y="11" width="256" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lastGame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adF-Lp-iRx">
+                                            <rect key="frame" x="103" y="34" width="256" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.60423413209999999" green="0.59855266630000004" blue="0.595368287" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <color key="highlightedColor" red="0.60423413209999999" green="0.59855266630000004" blue="0.595368287" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lastMessage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKp-kA-y3O">
+                                            <rect key="frame" x="103" y="52" width="256" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageProfileChat" destination="mL6-Is-gZS" id="nWX-Q2-yYI"/>
+                                    <outlet property="lastGame" destination="adF-Lp-iRx" id="LdE-tV-ba8"/>
+                                    <outlet property="lastMessage" destination="lKp-kA-y3O" id="e1n-fN-8kv"/>
+                                    <outlet property="nameProfileChat" destination="tlL-0g-krI" id="oJL-WD-MmZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UaE-R6-tAl" id="iTp-Qg-0U2"/>
+                            <outlet property="delegate" destination="UaE-R6-tAl" id="BAw-0W-HbY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chat" id="1Mr-a4-niv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="af6-Qr-Xrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2566" y="857"/>
+            <point key="canvasLocation" x="2532" y="859.52023988005999"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification-->
         <scene sceneID="0pX-Pu-2dG">
             <objects>
                 <viewController id="Lnb-te-QXh" sceneMemberID="viewController">
@@ -79,7 +142,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9MT-m6-qq9"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3aZ-XG-EDM"/>
+                    <navigationItem key="navigationItem" title="Notification" id="3aZ-XG-EDM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfr-pv-VI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +156,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUZ-hp-RMe">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.95153409239999998" green="0.67954927679999999" blue="0.23902618889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="ESW-mB-nFj" kind="relationship" relationship="viewControllers" id="XSN-mY-rgB"/>
@@ -156,7 +219,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="EUH-nv-jx2" kind="relationship" relationship="rootViewController" id="lNq-MR-02w"/>
+                        <segue destination="UaE-R6-tAl" kind="relationship" relationship="rootViewController" id="7uH-iV-I5x"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJP-9Z-8nI" userLabel="First Responder" sceneMemberID="firstResponder"/>

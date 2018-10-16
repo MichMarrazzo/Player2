@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CA2176170B008DA0C6 /* Gamer.swift */; };
 		09C972CD21761727008DA0C6 /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CC21761727008DA0C6 /* Clan.swift */; };
+		09C972D12176239A008DA0C6 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972D02176239A008DA0C6 /* ChatTableViewCell.swift */; };
+		09C972D321762468008DA0C6 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972D221762468008DA0C6 /* ChatTableViewController.swift */; };
+		09C972D521762621008DA0C6 /* ChatPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972D421762621008DA0C6 /* ChatPreview.swift */; };
 		F6E303D62175F551002C4E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E303D52175F551002C4E84 /* AppDelegate.swift */; };
 		F6E303D82175F551002C4E84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E303D72175F551002C4E84 /* ViewController.swift */; };
 		F6E303DB2175F551002C4E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E303D92175F551002C4E84 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		09C972CA2176170B008DA0C6 /* Gamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamer.swift; sourceTree = "<group>"; };
 		09C972CC21761727008DA0C6 /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
+		09C972D02176239A008DA0C6 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		09C972D221762468008DA0C6 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		09C972D421762621008DA0C6 /* ChatPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreview.swift; sourceTree = "<group>"; };
 		F6E303D22175F551002C4E84 /* Player 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Player 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E303D52175F551002C4E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E303D72175F551002C4E84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +89,26 @@
 			children = (
 				09C972CA2176170B008DA0C6 /* Gamer.swift */,
 				09C972CC21761727008DA0C6 /* Clan.swift */,
+				09C972D421762621008DA0C6 /* ChatPreview.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09C972CE21762353008DA0C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09C972CF21762363008DA0C6 /* Chat Controller */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09C972CF21762363008DA0C6 /* Chat Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09C972D02176239A008DA0C6 /* ChatTableViewCell.swift */,
+				09C972D221762468008DA0C6 /* ChatTableViewController.swift */,
+			);
+			path = "Chat Controller";
 			sourceTree = "<group>";
 		};
 		F6E303C92175F550002C4E84 = {
@@ -110,6 +134,7 @@
 		F6E303D42175F551002C4E84 /* Player 2 */ = {
 			isa = PBXGroup;
 			children = (
+				09C972CE21762353008DA0C6 /* Controller */,
 				09C972C9217616D6008DA0C6 /* Model */,
 				F6E303D52175F551002C4E84 /* AppDelegate.swift */,
 				F6E303D72175F551002C4E84 /* ViewController.swift */,
@@ -272,8 +297,11 @@
 			files = (
 				09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */,
 				F6E303D82175F551002C4E84 /* ViewController.swift in Sources */,
+				09C972D12176239A008DA0C6 /* ChatTableViewCell.swift in Sources */,
+				09C972D521762621008DA0C6 /* ChatPreview.swift in Sources */,
 				F6E303D62175F551002C4E84 /* AppDelegate.swift in Sources */,
 				09C972CD21761727008DA0C6 /* Clan.swift in Sources */,
+				09C972D321762468008DA0C6 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
