@@ -10,12 +10,16 @@ import UIKit
 
 class ChatTableViewController: UITableViewController {
 
+    @IBOutlet weak var segmentationChat: UISegmentedControl!
+    @IBOutlet var tableChat: UITableView!
+    
     //list of (samples) chat
     var chatPreviewList = [ChatPreview]()
+    var chatGroupPreviewList = [ChatPreview]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         loadChatSamples()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,16 +45,39 @@ class ChatTableViewController: UITableViewController {
         let cellIdentifier = "ChatTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ChatTableViewCell
         
-        //take chat preview from list
-        let chat = chatPreviewList[indexPath.row]
+        switch(segmentationChat.selectedSegmentIndex)
+        {
+        case 0:
+            //take chat preview from list
+            let chat = chatPreviewList[indexPath.row]
+            
+            // Configure the cell
+            cell.imageProfileChat.image = chat.imageProfileChat
+            cell.nameProfileChat.text = chat.nameProfileChat
+            cell.lastGame.text = chat.lastGame
+            cell.lastMessage.text = chat.lastMessage
+            break
         
-        // Configure the cell
-        cell.imageProfileChat.image = chat.imageProfileChat
-        cell.nameProfileChat.text = chat.nameProfileChat
-        cell.lastGame.text = chat.lastGame
-        cell.lastMessage.text = chat.lastMessage
+        case 1:
+            
+            let chatGroup = chatGroupPreviewList[indexPath.row]
+            
+            // Configure the cell
+            cell.imageProfileChat.image = chatGroup.imageProfileChat
+            cell.nameProfileChat.text = chatGroup.nameProfileChat
+            cell.lastGame.text = chatGroup.lastGame
+            cell.lastMessage.text = chatGroup.lastMessage
+            break
+            
+        default:
+            break
+        }
 
         return cell
+    }
+    
+    @IBAction func tapSegmentation(_ sender: Any) {
+        self.tableChat.reloadData()
     }
     
     func loadChatSamples(){
@@ -66,8 +93,21 @@ class ChatTableViewController: UITableViewController {
         
         //Adding to my list
         chatPreviewList += [chat01,chat02,chat03]
+        
+        //Function to create samples of chat preview for group
+        let photoGroup1 = UIImage(named: "profileGroup1")!
+        let photoGroup2 = UIImage(named: "profileGroup2")!
+        let photoGroup3 = UIImage(named: "profileGroup3")!
+        
+        let chatGroup01 = ChatPreview(imageProfileChat: photoGroup1, nameProfileChat: "Invincibles", lastGame: "COD: Black Vipers", lastMessage: "Gooooo")
+        let chatGroup02 = ChatPreview(imageProfileChat: photoGroup2, nameProfileChat: "Lot of Fun CLAN", lastGame: "LOL", lastMessage: "We lose...")
+        let chatGroup03 = ChatPreview(imageProfileChat: photoGroup3, nameProfileChat: "MisteryClan", lastGame: "Rocket League", lastMessage: "What about tonight?")
+        
+        //Adding to my list
+        chatGroupPreviewList += [chatGroup01,chatGroup02,chatGroup03]
     }
     
+   
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

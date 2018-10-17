@@ -73,6 +73,9 @@
                                         <segment title="Clans"/>
                                     </segments>
                                     <color key="tintColor" red="0.95153409242630005" green="0.67954927682876587" blue="0.23902618885040283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="tapSegmentation:" destination="UaE-R6-tAl" eventType="valueChanged" id="15q-ic-U1P"/>
+                                    </connections>
                                 </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,6 +130,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chat" id="1Mr-a4-niv"/>
+                    <connections>
+                        <outlet property="segmentationChat" destination="yOW-e5-3P0" id="6CX-du-jIp"/>
+                        <outlet property="tableChat" destination="N5H-Le-5va" id="Fab-c7-cJ2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="af6-Qr-Xrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
