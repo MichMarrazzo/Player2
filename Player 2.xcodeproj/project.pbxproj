@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09A5FEFF21774A7D0004F24A /* SingleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5FEFE21774A7C0004F24A /* SingleChatViewController.swift */; };
+		09A5FF01217773D80004F24A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5FF00217773D80004F24A /* Message.swift */; };
+		09A5FF03217777940004F24A /* OtherMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5FF02217777940004F24A /* OtherMessageTableViewCell.swift */; };
+		09A5FF05217777C30004F24A /* YourMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5FF04217777C30004F24A /* YourMessageTableViewCell.swift */; };
 		09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CA2176170B008DA0C6 /* Gamer.swift */; };
 		09C972CD21761727008DA0C6 /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CC21761727008DA0C6 /* Clan.swift */; };
 		09C972D12176239A008DA0C6 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972D02176239A008DA0C6 /* ChatTableViewCell.swift */; };
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		09A5FEFE21774A7C0004F24A /* SingleChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChatViewController.swift; sourceTree = "<group>"; };
+		09A5FF00217773D80004F24A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		09A5FF02217777940004F24A /* OtherMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMessageTableViewCell.swift; sourceTree = "<group>"; };
+		09A5FF04217777C30004F24A /* YourMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourMessageTableViewCell.swift; sourceTree = "<group>"; };
 		09C972CA2176170B008DA0C6 /* Gamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamer.swift; sourceTree = "<group>"; };
 		09C972CC21761727008DA0C6 /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
 		09C972D02176239A008DA0C6 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		09C972C9217616D6008DA0C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				09A5FF00217773D80004F24A /* Message.swift */,
 				09C972CA2176170B008DA0C6 /* Gamer.swift */,
 				09C972CC21761727008DA0C6 /* Clan.swift */,
 				09C972D421762621008DA0C6 /* ChatPreview.swift */,
@@ -110,6 +117,8 @@
 				09C972D02176239A008DA0C6 /* ChatTableViewCell.swift */,
 				09C972D221762468008DA0C6 /* ChatTableViewController.swift */,
 				09A5FEFE21774A7C0004F24A /* SingleChatViewController.swift */,
+				09A5FF02217777940004F24A /* OtherMessageTableViewCell.swift */,
+				09A5FF04217777C30004F24A /* YourMessageTableViewCell.swift */,
 			);
 			path = "Chat Controller";
 			sourceTree = "<group>";
@@ -301,8 +310,11 @@
 				09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */,
 				F6E303D82175F551002C4E84 /* ViewController.swift in Sources */,
 				09A5FEFF21774A7D0004F24A /* SingleChatViewController.swift in Sources */,
+				09A5FF01217773D80004F24A /* Message.swift in Sources */,
 				09C972D12176239A008DA0C6 /* ChatTableViewCell.swift in Sources */,
 				09C972D521762621008DA0C6 /* ChatPreview.swift in Sources */,
+				09A5FF03217777940004F24A /* OtherMessageTableViewCell.swift in Sources */,
+				09A5FF05217777C30004F24A /* YourMessageTableViewCell.swift in Sources */,
 				F6E303D62175F551002C4E84 /* AppDelegate.swift in Sources */,
 				09C972CD21761727008DA0C6 /* Clan.swift in Sources */,
 				09C972D321762468008DA0C6 /* ChatTableViewController.swift in Sources */,
