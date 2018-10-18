@@ -98,6 +98,7 @@
 				F6E303E92175F552002C4E84 /* Player 2Tests */,
 				F6E303F42175F552002C4E84 /* Player 2UITests */,
 				F6E303D32175F551002C4E84 /* Products */,
+				F6E303F52175F552002C4E84 /* Player_2UITests.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,7 +140,6 @@
 		F6E303F42175F552002C4E84 /* Player 2UITests */ = {
 			isa = PBXGroup;
 			children = (
-				F6E303F52175F552002C4E84 /* Player_2UITests.swift */,
 				F6E303F72175F552002C4E84 /* Info.plist */,
 			);
 			path = "Player 2UITests";
