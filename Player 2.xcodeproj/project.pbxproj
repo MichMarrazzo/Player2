@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CA2176170B008DA0C6 /* Gamer.swift */; };
 		09C972CD21761727008DA0C6 /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CC21761727008DA0C6 /* Clan.swift */; };
+		F6C7B1F821787807001D9BF1 /* RadarSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7B1F721787807001D9BF1 /* RadarSegmentedControl.swift */; };
 		F6E303D62175F551002C4E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E303D52175F551002C4E84 /* AppDelegate.swift */; };
 		F6E303D82175F551002C4E84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E303D72175F551002C4E84 /* ViewController.swift */; };
 		F6E303DB2175F551002C4E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E303D92175F551002C4E84 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		09C972CA2176170B008DA0C6 /* Gamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamer.swift; sourceTree = "<group>"; };
 		09C972CC21761727008DA0C6 /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
+		F6C7B1F721787807001D9BF1 /* RadarSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSegmentedControl.swift; sourceTree = "<group>"; };
 		F6E303D22175F551002C4E84 /* Player 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Player 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E303D52175F551002C4E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E303D72175F551002C4E84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F6C7B1F6217877E8001D9BF1 /* Radar */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7B1F721787807001D9BF1 /* RadarSegmentedControl.swift */,
+			);
+			path = Radar;
+			sourceTree = "<group>";
+		};
 		F6E303C92175F550002C4E84 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		F6E303D42175F551002C4E84 /* Player 2 */ = {
 			isa = PBXGroup;
 			children = (
+				F6C7B1F6217877E8001D9BF1 /* Radar */,
 				09C972C9217616D6008DA0C6 /* Model */,
 				F6E303D52175F551002C4E84 /* AppDelegate.swift */,
 				F6E303D72175F551002C4E84 /* ViewController.swift */,
@@ -272,6 +283,7 @@
 			files = (
 				09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */,
 				F6E303D82175F551002C4E84 /* ViewController.swift in Sources */,
+				F6C7B1F821787807001D9BF1 /* RadarSegmentedControl.swift in Sources */,
 				F6E303D62175F551002C4E84 /* AppDelegate.swift in Sources */,
 				09C972CD21761727008DA0C6 /* Clan.swift in Sources */,
 			);

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Radar Segmented Control-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RadarSegmentedControl" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,12 +26,42 @@
                                     <segment title="Events"/>
                                 </segments>
                                 <color key="tintColor" red="0.95206111669540405" green="0.6783713698387146" blue="0.23903194069862366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="RadarChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="bRv-4Q-yg5"/>
+                                </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spQ-bH-PZq">
+                                <rect key="frame" x="16" y="120" width="343" height="310"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="08T-Eu-c6R" kind="embed" id="TIJ-mX-ZN1"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ty1-hP-d7I">
+                                <rect key="frame" x="16" y="120" width="343" height="310"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="QsY-Xu-DXI" kind="embed" id="wZb-hs-d8T"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUY-iU-OaB">
+                                <rect key="frame" x="16" y="120" width="343" height="310"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="gUA-1g-yxx" kind="embed" id="tK7-dN-wqs"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="h3h-5q-pfc"/>
+                    <connections>
+                        <outlet property="ClansRadar" destination="Ty1-hP-d7I" id="Qzh-tM-xrA"/>
+                        <outlet property="EventsRadar" destination="pUY-iU-OaB" id="u0M-p6-56M"/>
+                        <outlet property="GamerRadar" destination="spQ-bH-PZq" id="mdh-5N-P07"/>
+                        <outlet property="SegmentationRadar" destination="fHz-CX-FOZ" id="5lb-sX-PzC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +153,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNc-oC-mY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="42.728635682158924"/>
+            <point key="canvasLocation" x="764" y="46"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="95H-4B-AhI">
@@ -182,5 +212,51 @@
             </objects>
             <point key="canvasLocation" x="3454" y="47"/>
         </scene>
+        <!--Radar Segmented Control-->
+        <scene sceneID="qDZ-5h-FNZ">
+            <objects>
+                <viewController id="QsY-Xu-DXI" customClass="RadarSegmentedControl" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R0G-Kw-AeD">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="310"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZrN-Ze-bqG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BoU-0c-w8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="1451"/>
+        </scene>
+        <!--Radar Segmented Control-->
+        <scene sceneID="wT5-u2-Z5z">
+            <objects>
+                <viewController id="08T-Eu-c6R" customClass="RadarSegmentedControl" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iuG-Nb-k4u">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="310"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="evo-sN-jFl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LyW-aW-Qz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="1451"/>
+        </scene>
+        <!--Radar Segmented Control-->
+        <scene sceneID="0BE-N4-UDG">
+            <objects>
+                <viewController id="gUA-1g-yxx" customClass="RadarSegmentedControl" customModule="Player_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YEH-Ea-OWv">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="310"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ghm-IV-lSD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOy-A3-F9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279" y="1451"/>
+        </scene>
     </scenes>
+    <color key="tintColor" red="0.95206111670000004" green="0.67837136980000001" blue="0.2390319407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
