@@ -12,6 +12,10 @@ class ChatTableViewController: UITableViewController {
 
     @IBOutlet weak var segmentationChat: UISegmentedControl!
     @IBOutlet var tableChat: UITableView!
+
+    //Variable to know wich cell is tapped
+    var selectedCell = IndexPath(item: 0, section: 0)
+    
     
     //list of (samples) chat
     var chatPreviewList = [ChatPreview]()
@@ -107,7 +111,29 @@ class ChatTableViewController: UITableViewController {
         chatGroupPreviewList += [chatGroup01,chatGroup02,chatGroup03]
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //this function is for tap action on a cell
+        print("This cell from the chat list was selected: \(indexPath.row)")
+        selectedCell = indexPath
+        self.performSegue(withIdentifier: "SingleChatViewController", sender: self)
+    }
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //this is for prepare data to net view
+        print("Sono in prepare")
+        if (segue.identifier == "SingleChatViewController"){
+            if let vc = segue.destination as? SingleChatViewController {
+                print("Setto in prepare")
+                if(segmentationChat.selectedSegmentIndex == 0){
+                    vc.messagePassed = chatPreviewList[selectedCell.row]
+                }else{
+                     vc.messagePassed = chatGroupPreviewList[selectedCell.row]
+                }
+            }
+        }
+    }
+    
+}
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -143,14 +169,9 @@ class ChatTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
-}
