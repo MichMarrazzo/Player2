@@ -11,33 +11,50 @@ import UIKit
 class RadarSegmentedControl: UIViewController {
     
 
-    @IBOutlet var GamerRadar: UIView! = UIView()
-    @IBOutlet var GamerRadarSearched: UIView! = UIView()
-    @IBOutlet var ClansRadar: UIView! = UIView()
-    @IBOutlet var EventsRadar: UIView! = UIView()
-    
     @IBOutlet weak var SegmentationRadar: UISegmentedControl!
     
-
+    
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var profileButton2: UIButton!
+    
+    @IBOutlet weak var clanButton2: UIButton!
+    @IBOutlet weak var clanButton: UIButton!
+    
+    @IBOutlet weak var eventButton: UIButton!
+    @IBOutlet weak var eventButton2: UIButton!
+    
+    
     @IBAction func RadarChanger(_ sender: Any) {switch (SegmentationRadar.selectedSegmentIndex)
     {
     case 0:
         NSLog("Gamers selected")
-        GamerRadar.isHidden = false
-        ClansRadar.isHidden = true
-        EventsRadar.isHidden = true
+        self.clanButton.isHidden = true
+        self.eventButton.isHidden = true
+        self.profileButton.isHidden = false
+        
+        self.clanButton2.isHidden = true
+        self.eventButton2.isHidden = true
+        self.profileButton2.isHidden = false
         break;
     case 1:
         NSLog("Clans selected")
-        GamerRadar.isHidden = true
-        ClansRadar.isHidden = false
-        EventsRadar.isHidden = true
+        self.clanButton.isHidden = false
+        self.eventButton.isHidden = true
+        self.profileButton.isHidden = true
+        
+        self.clanButton2.isHidden = false
+        self.eventButton2.isHidden = true
+        self.profileButton2.isHidden = true
         break;
     case 2:
         NSLog("Events selected")
-        GamerRadar.isHidden = true
-        ClansRadar.isHidden = true
-        EventsRadar.isHidden = false
+        self.clanButton.isHidden = true
+        self.eventButton.isHidden = false
+        self.profileButton.isHidden = true
+        
+        self.clanButton2.isHidden = true
+        self.eventButton2.isHidden = false
+        self.profileButton2.isHidden = true
         break;
     default:
         break;
@@ -45,12 +62,8 @@ class RadarSegmentedControl: UIViewController {
     }
 
     
-    @IBOutlet var GamerRadarView: UIView! = UIView()
-    
-    @IBOutlet weak var NavBarGamerRadar: UINavigationItem!
-    
-    @IBOutlet var Player1: UIView! = UIView()
-    
+  
+    /*
     @IBAction func PropicButt(_ sender: Any) {
         RandomViewMover(MiniPropic: Player1)
     }
@@ -84,12 +97,17 @@ class RadarSegmentedControl: UIViewController {
         print("here")
         
     }
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
-        GamerRadar.isHidden = false
-        ClansRadar.isHidden = true
-        EventsRadar.isHidden = true
+        
+        self.clanButton.isHidden = true
+        self.eventButton.isHidden = true
+        self.profileButton.isHidden = false
+        
+        self.clanButton2.isHidden = true
+        self.eventButton2.isHidden = true
+        self.profileButton2.isHidden = false
         
         self.navigationController?.isNavigationBarHidden = false //to hide navigation bar in radars views
         
@@ -104,16 +122,45 @@ class RadarSegmentedControl: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func gamerTap(_ sender: Any) {
+        print("premuto")
+        self.performSegue(withIdentifier: "toGamer", sender: self)
+    }
     
-
-    /*
+    @IBAction func eventTap(_ sender: Any) {
+        print("premuto")
+        self.performSegue(withIdentifier: "toEvent", sender: self)
+    }
+    
+    @IBAction func clanTap(_ sender: Any) {
+        print("premuto")
+        self.performSegue(withIdentifier: "toClan", sender: self)
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if(true){
+            if(segue.identifier == "toGamer"){
+                print("Preparo per il profilo")
+                //let vc = segue.destination as? NomeControllerDelProfilo
+                
+                
+            }else if(segue.identifier == "toEvent"){
+                print("Preparo per evento")
+                //let vc = segue.destination as? Nome dell'evento
+                
+            }else if(segue.identifier == "toClan"){
+                 print("Preparo per clan")
+                
+                //let vc = segue.destination as? NomeControllerDelClan
+
+            }
+            
+        }
     }
-    */
+  
 
 }
