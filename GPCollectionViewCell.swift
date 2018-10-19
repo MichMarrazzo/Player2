@@ -1,5 +1,5 @@
 //
-//  ImageCollectionViewCell.swift
+//  GPCollectionViewCell.swift
 //  Player 2
 //
 //  Created by Hong on 18/10/2018.
@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ImageCollectionViewCell: UICollectionViewCell {
+class GPCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imgImage: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }
