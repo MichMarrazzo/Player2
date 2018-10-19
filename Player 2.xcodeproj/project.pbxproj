@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CA2176170B008DA0C6 /* Gamer.swift */; };
 		09C972CD21761727008DA0C6 /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C972CC21761727008DA0C6 /* Clan.swift */; };
+		3CBC82F82179D2A0001AA7E8 /* ClanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC82F72179D2A0001AA7E8 /* ClanViewController.swift */; };
 		3CE2FEBA21771FAF00190731 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2FEB921771FAF00190731 /* Notification.swift */; };
 		3CE2FEBC2177235700190731 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2FEBB2177235700190731 /* TableViewController.swift */; };
 		3CE2FEBF2177262800190731 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2FEBE2177262800190731 /* TableViewCell.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		09C972CA2176170B008DA0C6 /* Gamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamer.swift; sourceTree = "<group>"; };
 		09C972CC21761727008DA0C6 /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
+		3CBC82F72179D2A0001AA7E8 /* ClanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewController.swift; sourceTree = "<group>"; };
 		3CE2FEB921771FAF00190731 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		3CE2FEBB2177235700190731 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3CE2FEBE2177262800190731 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				3CE2FEB921771FAF00190731 /* Notification.swift */,
 				3CE2FEBB2177235700190731 /* TableViewController.swift */,
 				3CE2FEBE2177262800190731 /* TableViewCell.swift */,
+				3CBC82F72179D2A0001AA7E8 /* ClanViewController.swift */,
 			);
 			path = NotificationGIOSUE;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBC82F82179D2A0001AA7E8 /* ClanViewController.swift in Sources */,
 				09C972CB2176170B008DA0C6 /* Gamer.swift in Sources */,
 				3CE2FEBC2177235700190731 /* TableViewController.swift in Sources */,
 				3CE2FEBA21771FAF00190731 /* Notification.swift in Sources */,
