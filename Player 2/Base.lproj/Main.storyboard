@@ -63,7 +63,7 @@
                                                     <segue destination="uqf-oP-qvw" kind="embed" id="c3a-YY-pPP"/>
                                                 </connections>
                                             </containerView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDBTest" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-fI-rIS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pPic142x142" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-fI-rIS">
                                                 <rect key="frame" x="127.5" y="80" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="VOv-si-LhZ"/>
@@ -73,28 +73,28 @@
                                             <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ox1-Xz-X1L">
                                                 <rect key="frame" x="125" y="254" width="125" height="20"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDBTest" translatesAutoresizingMaskIntoConstraints="NO" id="hYT-YM-ZAp">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconGameType01x30x30" translatesAutoresizingMaskIntoConstraints="NO" id="hYT-YM-ZAp">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="Yi1-Dc-7JT"/>
                                                             <constraint firstAttribute="height" constant="20" id="qvm-PV-Rmp"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDBTest" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-bF-NcB">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconGameType02x30x30" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-bF-NcB">
                                                         <rect key="frame" x="35" y="0.0" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="PYj-yr-WFy"/>
                                                             <constraint firstAttribute="height" constant="20" id="olC-XU-Rzn"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDBTest" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-3D-s0p">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconGameType03x30x30" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-3D-s0p">
                                                         <rect key="frame" x="70" y="0.0" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="69c-hf-DAr"/>
                                                             <constraint firstAttribute="height" constant="20" id="ieL-vm-R4S"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDBTest" translatesAutoresizingMaskIntoConstraints="NO" id="JeZ-f9-7q2">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconGameType04x30x30" translatesAutoresizingMaskIntoConstraints="NO" id="JeZ-f9-7q2">
                                                         <rect key="frame" x="105" y="0.0" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="AGl-jy-5F1"/>
@@ -103,11 +103,11 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDBTest" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-fH-0rG">
-                                                <rect key="frame" x="305" y="80" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconEdit" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-fH-0rG">
+                                                <rect key="frame" x="318" y="80" width="27" height="27"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="Xgs-36-lfK"/>
-                                                    <constraint firstAttribute="width" constant="40" id="vwG-8r-xau"/>
+                                                    <constraint firstAttribute="height" constant="27" id="Xgs-36-lfK"/>
+                                                    <constraint firstAttribute="width" constant="27" id="vwG-8r-xau"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -180,7 +180,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBTest" id="Rh9-Jn-oiZ">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBFriend" id="Rh9-Jn-oiZ">
                                                     <rect key="frame" x="16" y="7" width="29" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
@@ -204,8 +204,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBTest" id="eRE-dE-ndS">
-                                                    <rect key="frame" x="16" y="7" width="29" height="29"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBClans" id="eRE-dE-ndS">
+                                                    <rect key="frame" x="16" y="6" width="29" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -225,8 +225,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBTest" id="EC5-Su-4fL">
-                                                    <rect key="frame" x="16" y="7" width="29" height="29"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBEvent" id="EC5-Su-4fL">
+                                                    <rect key="frame" x="16" y="6" width="29" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -250,8 +250,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBTest" id="qsS-Nc-Vux">
-                                                    <rect key="frame" x="16" y="7" width="29" height="29"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBAccount" id="qsS-Nc-Vux">
+                                                    <rect key="frame" x="16" y="6" width="29" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -271,8 +271,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBTest" id="Gy5-U9-NmZ">
-                                                    <rect key="frame" x="16" y="7" width="29" height="29"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="iconDBPrivacy" id="Gy5-U9-NmZ">
+                                                    <rect key="frame" x="16" y="6" width="29" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -437,6 +437,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iconDBTest" width="29" height="29"/>
+        <image name="iconDBAccount" width="29" height="30"/>
+        <image name="iconDBClans" width="29" height="30"/>
+        <image name="iconDBEvent" width="29" height="30"/>
+        <image name="iconDBFriend" width="29" height="29"/>
+        <image name="iconDBPrivacy" width="29" height="30"/>
+        <image name="iconEdit" width="30" height="30"/>
+        <image name="iconGameType01x30x30" width="30" height="30"/>
+        <image name="iconGameType02x30x30" width="30" height="30"/>
+        <image name="iconGameType03x30x30" width="30" height="30"/>
+        <image name="iconGameType04x30x30" width="30" height="30"/>
+        <image name="pPic142x142" width="142" height="142"/>
     </resources>
 </document>
